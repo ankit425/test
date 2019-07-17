@@ -34,15 +34,12 @@
 
 // 	Hint: Use the `for (let ..of .. ) { }` style loop.
 
-// TODO: define addFavoriteBook(..) function
-
 function addFavoriteBook(bookName) {
+  // check if great is not in book name
   if (!bookName.includes("Great")) {
     favoriteBooks.push(bookName);
   }
 }
-
-// TODO: define printFavoriteBooks() function
 
 function printFavoriteBooks() {
   console.log(`Favorite Books: ${favoriteBooks.length}`);
@@ -59,7 +56,5 @@ addFavoriteBook("Crime & Punishment");
 addFavoriteBook("Great Expectations");
 addFavoriteBook("You Don't Know JS");
 addFavoriteBook("The Lord of The Rings");
-
-// TODO: print out favorite books
 
 printFavoriteBooks();

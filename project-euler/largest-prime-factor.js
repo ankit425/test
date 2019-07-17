@@ -2,20 +2,6 @@
 
 // What is the largest prime factor of the number 600851475143 ?
 
-// let num = 600851475143;
-// let currentDivisor = 2;
-// let maxDivisor = 0;
-// while (num !== 1) {
-//   if (num % currentDivisor) currentDivisor++;
-//   else {
-//     console.log(num, currentDivisor);
-//     maxDivisor = currentDivisor;
-//     num = num / currentDivisor;
-//   }
-// }
-
-// console.log(maxDivisor);
-
 let num = 600851475143;
 
 function getFactors(num) {
@@ -31,6 +17,7 @@ function getFactors(num) {
 
 function isPrime(num) {
   const factors = getFactors(num);
+  // prime numbers have no factors other than 1 and themselves
   return factors.length === 0;
 }
 

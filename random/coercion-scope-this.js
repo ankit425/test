@@ -29,9 +29,8 @@ class Bookshelf {
     this.favoriteBooks = [];
   }
 
-  // TODO: define methods `addFavoriteBook(..)`
-  // and `printFavoriteBooks()`
   addFavoriteBook(bookName) {
+    // check if great is not in book name
     if (!bookName.includes("Great")) {
       this.favoriteBooks.push(bookName);
     }
@@ -46,7 +45,6 @@ class Bookshelf {
 }
 
 function loadBooks(MyBookShelf) {
-  // TODO: call fakeAjax( .. );
   fakeAjax(BOOK_API, function onBooks(myBooks) {
     for (let book of myBooks) {
       MyBookShelf.addFavoriteBook(book);

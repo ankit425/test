@@ -5,6 +5,7 @@
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even - valued terms.
 
 (function() {
+  // recusive fibonnaci calculation f(n) = f(n - 1) + f(n - 2) n>2
   function genFib(n) {
     if (n <= 3) {
       return n;
